@@ -1,0 +1,168 @@
+/* Box sizing reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Base page styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 15px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #b22222;
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 640px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Note form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #b22222;
+    transform: translateY(-2px);
+}
+
+/* Features grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.features li {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Keyboard shortcuts table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
