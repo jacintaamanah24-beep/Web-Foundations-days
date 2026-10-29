@@ -1,4 +1,7 @@
 -- Day 6: School Database
+-- Enable foreign-key enforcement
+PRAGMA foreign_keys = ON;
+
 -- Create the students table
 
 CREATE TABLE students (
@@ -29,7 +32,8 @@ CREATE TABLE enrolments (
 INSERT INTO students (id, name, email) VALUES
 (1, 'Jacinta Amana', 'jacinta@example.com'),
 (2, 'Mary Wanjiku', 'mary@example.com'),
-(3, 'Brian Otieno', 'brian@example.com');
+(3, 'Brian Otieno', 'brian@example.com'),
+(4, 'Peter Kamau', 'peter@example.com');
 -- Insert sample courses
 
 INSERT INTO courses (id, course_name, instructor) VALUES
