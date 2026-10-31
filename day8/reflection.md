@@ -1,0 +1,7 @@
+# Day 8 – Course Reflection
+
+The most difficult concept I encountered during this course was system design, especially understanding how applications handle large numbers of users and simultaneous requests. Initially, concepts such as API integration, database relationships, caching, load balancing, and database transactions were challenging. I overcame these difficulties by practising step by step, building the QuickNotes application, studying how different components communicate, and applying the concepts in the TicketHub design. I particularly learned how database transactions and row-level locking can prevent two customers from purchasing the same seat.
+
+Based on the work completed on my QuickNotes capstone, one area I would improve is connecting the frontend to a real backend and PostgreSQL database instead of relying on a simulated API. This would allow notes to remain saved after refreshing the application and provide a more complete user experience. I would also improve the application by adding search and editing functionality.
+
+Going forward, I want to learn Node.js and Express to build real backend services, PostgreSQL for practical database management, and React for developing more interactive user interfaces. I also want to deepen my knowledge of cloud computing and system architecture so I can design and build applications that are reliable, scalable, and useful to real users.
